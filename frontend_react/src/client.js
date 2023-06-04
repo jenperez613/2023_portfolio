@@ -11,7 +11,7 @@ export const client = createClient({
 })
 
 const data = await client.fetch('*[_type == "abouts"]')
-//console.log(`Number of documents: ${data}`)
+console.log(`Number of documents: ${data}`)
 
 const builder = imageUrlBuilder(client)
 
